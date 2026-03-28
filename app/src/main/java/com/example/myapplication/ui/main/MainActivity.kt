@@ -9,7 +9,6 @@ import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.base.BaseActivity
 import com.example.myapplication.ui.home.HomeFragment
 import com.example.myapplication.ui.profile.ProfileFragment
-import com.example.myapplication.ui.main.vm.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -26,7 +25,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     override fun initView() {
         setupBottomNavigation()
-        // Load home fragment by default
         if (supportFragmentManager.findFragmentById(binding.fragmentContainer.id) == null) {
             loadFragment(HomeFragment())
         }
