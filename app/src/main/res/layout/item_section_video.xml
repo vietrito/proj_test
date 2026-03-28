@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivVideoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tvVideoCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video caption"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:lineSpacingMultiplier="1.4" />
+
+        <TextView
+            android:id="@+id/tvVideoDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#80000000"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_4sdp" />
+
+    </LinearLayout>
+
+</layout>
+
